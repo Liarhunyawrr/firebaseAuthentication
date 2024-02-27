@@ -22,7 +22,7 @@ const App = () => {
       window.location.href = "/";
     }
     return () => unsubscribe();
-  }, []);
+  }, [user]);
   return (
     <>
       <BrowserRouter>
