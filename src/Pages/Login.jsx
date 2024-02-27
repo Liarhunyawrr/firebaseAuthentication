@@ -51,6 +51,7 @@ const Login = () => {
                 Email:
               </label>
               <input
+                required
                 placeholder="Enter Email"
                 value={data.email}
                 onChange={(e) => setdata({ ...data, email: e.target.value })}
@@ -64,6 +65,7 @@ const Login = () => {
                 Password:
               </label>
               <input
+                required
                 placeholder="Enter Password"
                 value={data.password}
                 onChange={(e) => setdata({ ...data, password: e.target.value })}
