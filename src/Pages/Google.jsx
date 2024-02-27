@@ -23,7 +23,7 @@ const Google = () => {
         console.log(token);
         const user = result.user;
         console.log(user);
-        // toast.success("Authentication Successfull");
+        toast.success("Authentication Successfull");
         setjoin(true);
         console.log(result);
       })
@@ -34,7 +34,7 @@ const Google = () => {
         console.log(errorMessage);
         const email = error.customData.email;
         console.log(email);
-        toast.success("Authentication Successfull");
+        toast.error("Authentication failed");
 
         const credential = GoogleAuthProvider.credentialFromError(error);
         console.log(credential);
