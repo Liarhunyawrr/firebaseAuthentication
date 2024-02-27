@@ -18,7 +18,9 @@ const App = () => {
         setUser(null);
       }
     });
-
+    if (window.location.pathname !== "/" && !user) {
+      window.location.href = "/";
+    }
     return () => unsubscribe();
   }, []);
   return (
