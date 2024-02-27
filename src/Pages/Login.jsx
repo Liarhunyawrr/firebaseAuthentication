@@ -37,9 +37,9 @@ const Login = () => {
   return (
     <>
       <div className="login  m-2 p-2 flex justify-center ">
-        <div className=" box min-w-[30%] min-h-[40vh]">
+        <div className=" box  max-w-[450px] min-w-[350px] mb:min-w-[auto] mb:w-[100%] w-[40%]  min-h-[40vh]">
           <form
-            className=" border border-[#fa0060] box  flex flex-col gap-4 ed h-full px-8 py-3 rounded-[18px]  "
+            className=" border border-[#fa0060] box  flex flex-col gap-4 ed h-full p-4  rounded-[18px]  "
             onSubmit={subm}
             action="/"
           >
@@ -54,7 +54,7 @@ const Login = () => {
                 placeholder="Enter Email"
                 value={data.email}
                 onChange={(e) => setdata({ ...data, email: e.target.value })}
-                className="min-w-[400px]  rounded-2xl py-3 sm:w-auto px-4 bg-transparent border-2 border-gray-700 focus:border-[#fa0060] focus:outline-none"
+                className="max-w-[400px] min-w-[100%]   rounded-2xl py-3 sm:w-auto px-4 bg-transparent border-2 border-gray-700 focus:border-[#fa0060] focus:outline-none"
                 type="email"
               />
             </div>
@@ -67,7 +67,7 @@ const Login = () => {
                 placeholder="Enter Password"
                 value={data.password}
                 onChange={(e) => setdata({ ...data, password: e.target.value })}
-                className="min-w-[400px]  rounded-2xl py-3 sm:w-auto px-4 bg-transparent border-2 border-gray-700 focus:border-[#fa0060] focus:outline-none"
+                className="max-w-[400px] min-w-[100%]   rounded-2xl py-3 sm:w-auto px-4 bg-transparent border-2 border-gray-700 focus:border-[#fa0060] focus:outline-none"
                 type="password"
               />
             </div>
