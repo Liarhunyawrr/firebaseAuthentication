@@ -26,6 +26,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+        
         <Routes>
           <Route path="/" element={user ? <Home /> : <Join />} />
           <Route path="/join" element={<Join />} />
